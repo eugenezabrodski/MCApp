@@ -29,11 +29,17 @@ class MealsTVC: UITableViewController {
         100
     }
     
-    /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "ShowMealDetail" else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         
         let mealDetailVC = segue.destination as! MealDeatailViewController
+        mealDetailVC.index = indexPath.row
     }
-     */
+    
+    @IBAction func unwindToMealsTVC(_ unwindSegue: UIStoryboardSegue) {
+        tableView.reloadData()
+    }
+
+     
 }

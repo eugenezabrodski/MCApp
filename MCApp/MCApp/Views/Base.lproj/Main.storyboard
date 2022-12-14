@@ -41,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="F5e-ey-1Vm" kind="show" id="Suc-hf-n7s"/>
+                                    <segue destination="F5e-ey-1Vm" kind="show" identifier="ShowMealDetail" id="Suc-hf-n7s"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="679.71014492753625" y="76.339285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Meal Deatail View Controller-->
         <scene sceneID="F1k-Sr-X91">
             <objects>
-                <viewController id="F5e-ey-1Vm" sceneMemberID="viewController">
+                <viewController id="F5e-ey-1Vm" customClass="MealDeatailViewController" customModule="MCApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KbQ-UK-mki">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,25 +77,25 @@
                                         <rect key="frame" x="125" y="325.5" width="132.5" height="416.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wda-W3-J38">
-                                                <rect key="frame" x="0.0" y="0.0" width="132.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="132.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0x-Fc-TfF">
-                                                <rect key="frame" x="0.0" y="52.5" width="132.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="57.5" width="132.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nZ-TF-UDD">
-                                                <rect key="frame" x="0.0" y="105" width="132.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="115" width="132.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ot-q6-Fei">
-                                                <rect key="frame" x="0.0" y="157.5" width="132.5" height="132"/>
+                                                <rect key="frame" x="0.0" y="172.5" width="132.5" height="117"/>
                                                 <color key="backgroundColor" red="0.0" green="0.31849245240000001" blue="0.053468990930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="6P1-io-Ywz">
@@ -103,14 +103,13 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd5-ua-hT0">
                                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="35"/>
+                                                        <color key="backgroundColor" red="0.59716296122170087" green="0.50334112654178387" blue="0.014602741145981356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="cU7-S9-hIy"/>
                                                         </constraints>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" title="Button">
-                                                            <color key="baseBackgroundColor" red="0.0" green="0.31849245240000001" blue="0.053468990930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="Button"/>
                                                         <connections>
                                                             <segue destination="vXV-J2-N0h" kind="show" id="Eow-jM-Zcf"/>
                                                         </connections>
@@ -147,15 +146,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pK3-j4-Jyi"/>
+                    <connections>
+                        <outlet property="imageView" destination="cBK-fn-3oZ" id="IHu-0f-ey4"/>
+                        <outlet property="mealNameLabel" destination="Wda-W3-J38" id="tO7-Ez-Vsb"/>
+                        <outlet property="mealPriceLabel" destination="P0x-Fc-TfF" id="ULo-Du-QhC"/>
+                        <outlet property="mealStackView" destination="kho-RI-saV" id="Mlj-pD-hvU"/>
+                        <outlet property="ratingLabel" destination="0nZ-TF-UDD" id="cvn-T9-pQy"/>
+                        <outlet property="showReviewsBtn" destination="zd5-ua-hT0" id="n7Z-op-uQk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j7Z-XZ-Ieu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1492.753623188406" y="76.339285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Feedback View Controller-->
         <scene sceneID="ruH-A1-MlW">
             <objects>
-                <viewController id="moy-cH-nSc" sceneMemberID="viewController">
+                <viewController id="moy-cH-nSc" customClass="FeedbackViewController" customModule="MCApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fFs-TF-jU8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,6 +213,10 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                        <connections>
+                                            <action selector="saveFeedBack" destination="moy-cH-nSc" eventType="touchUpInside" id="zjE-4h-22A"/>
+                                            <segue destination="6R0-Mt-x82" kind="unwind" identifier="" unwindAction="unwindToMealsTVC:" id="8hj-S8-5Vp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -219,15 +230,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dWZ-tw-qkD"/>
+                    <connections>
+                        <outlet property="errorLbl" destination="bcm-ni-NTv" id="BYj-Rb-Seq"/>
+                        <outlet property="feedBackTextView" destination="riw-t0-Km5" id="6CR-Lp-EFa"/>
+                        <outlet property="ratingSegment" destination="xc1-zw-TWG" id="bPB-fK-2r7"/>
+                        <outlet property="saveFeedBackBtn" destination="gPR-AY-fX1" id="dVF-bw-3G4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LJ-c5-lUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6R0-Mt-x82" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2302.898550724638" y="75.669642857142847"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Reviews TableVC-->
         <scene sceneID="Z2z-fm-kDL">
             <objects>
-                <tableViewController id="vXV-J2-N0h" sceneMemberID="viewController">
+                <tableViewController id="vXV-J2-N0h" customClass="ReviewsTableVC" customModule="MCApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="RH5-9F-l4C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
