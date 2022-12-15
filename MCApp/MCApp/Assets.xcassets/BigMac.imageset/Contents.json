@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "BigMac.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

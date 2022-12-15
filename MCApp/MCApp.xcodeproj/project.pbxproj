@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF418E3C294A334700F23F24 /* ReviewsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF418E3B294A334700F23F24 /* ReviewsTableVC.swift */; };
+		AFA34EDD294A1B2600B0B817 /* MealDeatailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA34EDC294A1B2600B0B817 /* MealDeatailViewController.swift */; };
+		AFA34EDF294A244300B0B817 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA34EDE294A244300B0B817 /* FeedbackViewController.swift */; };
 		AFF32E012949C32100DA2856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E002949C32100DA2856 /* AppDelegate.swift */; };
 		AFF32E032949C32100DA2856 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E022949C32100DA2856 /* SceneDelegate.swift */; };
-		AFF32E052949C32100DA2856 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E042949C32100DA2856 /* ViewController.swift */; };
 		AFF32E082949C32100DA2856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF32E062949C32100DA2856 /* Main.storyboard */; };
 		AFF32E0A2949C32800DA2856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF32E092949C32800DA2856 /* Assets.xcassets */; };
 		AFF32E0D2949C32800DA2856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF32E0B2949C32800DA2856 /* LaunchScreen.storyboard */; };
+		AFF32E1A2949D22100DA2856 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E192949D22100DA2856 /* Meal.swift */; };
+		AFF32E1C2949D2BC00DA2856 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E1B2949D2BC00DA2856 /* Feedback.swift */; };
+		AFF32E1F2949ED0F00DA2856 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E1D2949ED0F00DA2856 /* ReviewTableViewCell.swift */; };
+		AFF32E202949ED0F00DA2856 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF32E1E2949ED0F00DA2856 /* ReviewTableViewCell.xib */; };
+		AFF32E232949EDE300DA2856 /* MealsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E222949EDE300DA2856 /* MealsData.swift */; };
+		AFF32E252949F19700DA2856 /* MealsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E242949F19700DA2856 /* MealsTVC.swift */; };
+		AFF32E272949FD8500DA2856 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF32E262949FD8500DA2856 /* CellManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF418E3B294A334700F23F24 /* ReviewsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableVC.swift; sourceTree = "<group>"; };
+		AFA34EDC294A1B2600B0B817 /* MealDeatailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDeatailViewController.swift; sourceTree = "<group>"; };
+		AFA34EDE294A244300B0B817 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		AFF32DFD2949C32100DA2856 /* MCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF32E002949C32100DA2856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFF32E022949C32100DA2856 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AFF32E042949C32100DA2856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFF32E072949C32100DA2856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFF32E092949C32800DA2856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFF32E0C2949C32800DA2856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFF32E0E2949C32800DA2856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF32E192949D22100DA2856 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		AFF32E1B2949D2BC00DA2856 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		AFF32E1D2949ED0F00DA2856 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		AFF32E1E2949ED0F00DA2856 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		AFF32E222949EDE300DA2856 /* MealsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsData.swift; sourceTree = "<group>"; };
+		AFF32E242949F19700DA2856 /* MealsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTVC.swift; sourceTree = "<group>"; };
+		AFF32E262949FD8500DA2856 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,72 @@
 		AFF32DFF2949C32100DA2856 /* MCApp */ = {
 			isa = PBXGroup;
 			children = (
-				AFF32E002949C32100DA2856 /* AppDelegate.swift */,
-				AFF32E022949C32100DA2856 /* SceneDelegate.swift */,
-				AFF32E042949C32100DA2856 /* ViewController.swift */,
-				AFF32E062949C32100DA2856 /* Main.storyboard */,
+				AFF32E172949D16400DA2856 /* Services */,
+				AFF32E162949D15C00DA2856 /* Models */,
+				AFF32E152949D12F00DA2856 /* Views */,
+				AFF32E182949D16A00DA2856 /* COntrollers */,
+				AFF32E142949C3A300DA2856 /* Delegates */,
 				AFF32E092949C32800DA2856 /* Assets.xcassets */,
-				AFF32E0B2949C32800DA2856 /* LaunchScreen.storyboard */,
 				AFF32E0E2949C32800DA2856 /* Info.plist */,
 			);
 			path = MCApp;
+			sourceTree = "<group>";
+		};
+		AFF32E142949C3A300DA2856 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AFF32E002949C32100DA2856 /* AppDelegate.swift */,
+				AFF32E022949C32100DA2856 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		AFF32E152949D12F00DA2856 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFF32E062949C32100DA2856 /* Main.storyboard */,
+				AFF32E0B2949C32800DA2856 /* LaunchScreen.storyboard */,
+				AFF32E212949ED1800DA2856 /* Review */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AFF32E162949D15C00DA2856 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFF32E192949D22100DA2856 /* Meal.swift */,
+				AFF32E1B2949D2BC00DA2856 /* Feedback.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFF32E172949D16400DA2856 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AFF32E222949EDE300DA2856 /* MealsData.swift */,
+				AFF32E262949FD8500DA2856 /* CellManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AFF32E182949D16A00DA2856 /* COntrollers */ = {
+			isa = PBXGroup;
+			children = (
+				AFF32E242949F19700DA2856 /* MealsTVC.swift */,
+				AFA34EDC294A1B2600B0B817 /* MealDeatailViewController.swift */,
+				AFA34EDE294A244300B0B817 /* FeedbackViewController.swift */,
+				AF418E3B294A334700F23F24 /* ReviewsTableVC.swift */,
+			);
+			path = COntrollers;
+			sourceTree = "<group>";
+		};
+		AFF32E212949ED1800DA2856 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				AFF32E1D2949ED0F00DA2856 /* ReviewTableViewCell.swift */,
+				AFF32E1E2949ED0F00DA2856 /* ReviewTableViewCell.xib */,
+			);
+			path = Review;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF32E0D2949C32800DA2856 /* LaunchScreen.storyboard in Resources */,
+				AFF32E202949ED0F00DA2856 /* ReviewTableViewCell.xib in Resources */,
 				AFF32E0A2949C32800DA2856 /* Assets.xcassets in Resources */,
 				AFF32E082949C32100DA2856 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +214,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFF32E052949C32100DA2856 /* ViewController.swift in Sources */,
 				AFF32E012949C32100DA2856 /* AppDelegate.swift in Sources */,
+				AFA34EDD294A1B2600B0B817 /* MealDeatailViewController.swift in Sources */,
+				AFF32E1A2949D22100DA2856 /* Meal.swift in Sources */,
+				AFA34EDF294A244300B0B817 /* FeedbackViewController.swift in Sources */,
+				AFF32E1F2949ED0F00DA2856 /* ReviewTableViewCell.swift in Sources */,
+				AF418E3C294A334700F23F24 /* ReviewsTableVC.swift in Sources */,
+				AFF32E1C2949D2BC00DA2856 /* Feedback.swift in Sources */,
+				AFF32E252949F19700DA2856 /* MealsTVC.swift in Sources */,
+				AFF32E232949EDE300DA2856 /* MealsData.swift in Sources */,
 				AFF32E032949C32100DA2856 /* SceneDelegate.swift in Sources */,
+				AFF32E272949FD8500DA2856 /* CellManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +377,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +389,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +406,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +418,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
