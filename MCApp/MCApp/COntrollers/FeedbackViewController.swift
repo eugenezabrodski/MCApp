@@ -9,6 +9,8 @@ import UIKit
 
 class FeedbackViewController: UIViewController {
     
+    //MARK: - Properties
+    
     var index: Int!
     
     @IBOutlet weak var feedBackTextView: UITextView!
@@ -16,10 +18,15 @@ class FeedbackViewController: UIViewController {
     @IBOutlet weak var ratingSegment: UISegmentedControl!
     @IBOutlet weak var saveFeedBackBtn: UIButton!
     
+    //MARK: - Life cicle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         feedBackTextView.delegate = self
+        hideKeyboardWhenTappedAround()
     }
+    
+    //MARK: - Methods
     
     @IBAction func saveFeedBack() {
         let feedback = Feedback(text: feedBackTextView.text, mark: Double(ratingSegment.selectedSegmentIndex + 1))
@@ -27,6 +34,8 @@ class FeedbackViewController: UIViewController {
     }
     
 }
+
+//MARK: - Extension
 
 extension FeedbackViewController: UITextViewDelegate {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
@@ -36,5 +45,17 @@ extension FeedbackViewController: UITextViewDelegate {
             errorLbl.isHidden = isCountEnough
         }
         return true
+    }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

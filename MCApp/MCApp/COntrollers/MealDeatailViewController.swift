@@ -9,6 +9,8 @@ import UIKit
 
 class MealDeatailViewController: UIViewController {
     
+    //MARK: - Properties
+    
     var index: Int!
     
     var meal: Meal {
@@ -22,6 +24,7 @@ class MealDeatailViewController: UIViewController {
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var showReviewsBtn: UIButton!
     
+    //MARK: - Life cicle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,8 @@ class MealDeatailViewController: UIViewController {
         super.viewWillTransition(to: size, with: coordinator)
         updateUI(with: size)
     }
+    
+    //MARK: - Properties
     
     private func updateUI(with size: CGSize) {
         let vertical = size.width < size.height

@@ -9,11 +9,15 @@ import UIKit
 
 class ReviewsTableVC: UITableViewController {
     
+    //MARK: - Properties
+    
     var index: Int!
 
     var meal: Meal {
         MealsData.shared.meals[index]
     }
+    
+    //MARK: - Life cicle
 
     override func viewDidLoad() {
         tableView.register(UINib(nibName: "ReviewTableViewCell", bundle: nil), forCellReuseIdentifier: "ReviewTableViewCell")
@@ -36,6 +40,4 @@ class ReviewsTableVC: UITableViewController {
         cell.ratingLbl.text = feedback.raitingBar
         return cell
     }
-
-
 }

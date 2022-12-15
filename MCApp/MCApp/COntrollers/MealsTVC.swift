@@ -9,10 +9,14 @@ import UIKit
 
 class MealsTVC: UITableViewController {
     
+    //MARK: - Properties
+    
     let cellManager = CellManager()
     var meals: [Meal] {
         MealsData.shared.meals
     }
+    
+    //MARK: - Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         meals.count
@@ -28,6 +32,8 @@ class MealsTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
     }
+    
+    //MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "ShowMealDetail" else { return }
